@@ -77,6 +77,7 @@ allprojects {
             add("implementation", platform("software.amazon.disco:disco-toolkit-bom:${discoVersion}"))
             add("implementation", platform("com.fasterxml.jackson:jackson-bom:2.11.0"))
             add("implementation", platform("com.amazonaws:aws-java-sdk-bom:${awsSdkV1Version}"))
+            add("implementation", platform("com.amazonaws:aws-java-sdk-sts:${awsSdkV1Version}"))
             add("implementation", platform("software.amazon.awssdk:bom:${awsSdkV2Version}"))
 
             // TODO: Add build step for running Null checker

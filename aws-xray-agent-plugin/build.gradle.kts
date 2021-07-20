@@ -14,6 +14,8 @@ dependencies {
     runtimeOnly("com.amazonaws:aws-xray-recorder-sdk-core")
     runtimeOnly("com.blogspot.mydailyjava:weak-lock-free:0.18")
 
+    implementation("com.amazonaws:aws-java-sdk-sts")
+
     // Setting isTransitive to false ensures we do not pull in any transitive dependencies of these modules
     // and pollute our JAR with them
     val nonTransitiveDeps = listOf(
